@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRONOMETRO</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="timer">
+                <div class="min">
+                    <input class="inputs input-min" type="number" name="min" id="min" value="00" max="24">
+                </div>
+                <span class="separador">:</span>
+                <div class="sec">
+                    <input class="inputs input-sec" type="number" name="sec" id="sec" value="00" max="60" >
+                </div>
+                <span class="separador">:</span>
+                <div class="miliSec">
+                    <input class="inputs input-miliSec" type="number" name="miliSec" id="miliSec" value="000" max="60" >
+                </div>
+            </div>
+            <div class="controls">
+                <div class="control-btns">
+                    <button class="btns play">PLAY</button>
+                    <button class="btns pause" hidden>PAUSE</button>
+                    <button class="btns stop">STOP</button>
+                    <button class="btns reload" hidden>RELOAD</button>
+                    <button class="btns timerBtn" hidden>TIMER</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../app/app.js"></script>
+</body>
+</html>
