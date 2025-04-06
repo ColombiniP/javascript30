@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+:root {
+    --bg-color:black;
+    --bg-green:green;
+    --bg-red:red;
+    --font-color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Share Tech Mono", monospace;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.content {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    text-align: center;
+    padding: 2rem;
+    font-size: 7rem;
+    width: 12rem;
+    height: 20rem;
+}
+
+.timer {
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.inputs {
+    border: none;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    -moz-appearance: none;
+}
+
+.inputs::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.inputs:focus {
+   outline: none;    
+}
+
+.miliSec, .input-miliSec {
+    font-size: 3rem;
+}
+
+.separador {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.controls {
+    padding: 2rem;
+}
+
+.control-btns {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+
+.btns {
+    padding: 0.5rem 4.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--font-color);
+    background: transparent;
+    cursor: pointer;
+    box-shadow: 6px 6px 0px 0px white;
+}
+
+.btns:hover {
+    box-shadow: none;
+    background-color: white;
+    color: black;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 0px 0px #252525;
+}
+
+.btns:active {
+    color: var(--font-color);
+    background: transparent;
+    cursor: pointer;
+    box-shadow: none;
+}
